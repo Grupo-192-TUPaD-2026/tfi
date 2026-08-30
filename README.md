@@ -62,14 +62,14 @@ tfi/
 
 ### 3. Diseño y Arquitectura
 * 📄 [Stack Tecnológico y Justificación](docs/03-diseno-y-arquitectura/01-stack-tecnologico-y-justificacion.md)
-* 📄 [Arquitectura del Sistema](docs/03-diseno-y-arquitectura/02-arquitectura-del-sistema.md)
-* 📄 [Modelo de Datos](docs/03-diseno-y-arquitectura/03-modelo-de-datos.md)
-* 📄 [Diseño de API y UI](docs/03-diseno-y-arquitectura/04-diseno-api-ui.md)
+* 📄 Arquitectura del Sistema
+* 📄 Modelo de Datos
+* 📄 Diseño de API y UI
 
 ### 4. Pruebas y Calidad
-* 📄 [Plan de Pruebas](docs/04-pruebas-y-calidad/01-plan-de-pruebas.md)
-* 📄 [Reportes de Cobertura y QA](docs/04-pruebas-y-calidad/02-reportes-de-cobertura-y-qa.md)
+* 📄 Plan de Pruebas
+* 📄 Reportes de Cobertura y QA
 
 ### 5. Despliegue y Entrega
-* 📄 [Guía de Instalación y Ejecución](docs/05-despliegue-y-entrega/01-guia-de-instalacion-y-ejecucion.md)
-* 📄 [Manual de Usuario y Demo](docs/05-despliegue-y-entrega/02-manual-usuario-y-demo.md)
+* 📄 Guía de Instalación y Ejecución
+* 📄 Manual de Usuario y Demo
