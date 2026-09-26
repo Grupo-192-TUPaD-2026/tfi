@@ -62,10 +62,10 @@ tfi/
 
 ### 3. Diseño y Arquitectura
 * 📄 [Stack Tecnológico y Justificación](docs/03-diseno-y-arquitectura/01-stack-tecnologico-y-justificacion.md)
-* 📄 Arquitectura del Sistema
-* 📄 Modelo de Datos
+* 📄 [Listado de Módulos](docs/03-diseno-y-arquitectura/02-listado-de-modulos.md)
+* 📄 [Arquitectura del Sistema](docs/03-diseno-y-arquitectura/03-arquitectura-del-sistema.md)
+* 📄 [Modelo de Datos](docs/03-diseno-y-arquitectura/04-modelo-de-datos.md)
 * 📄 Diseño de API y UI
-
 ### 4. Pruebas y Calidad
 * 📄 Plan de Pruebas
 * 📄 Reportes de Cobertura y QA
