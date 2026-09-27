@@ -11,7 +11,7 @@
 | :--- | :--- | :--- | :--- |
 | **Frontend (Cliente)** | **Nuxt 4** (Vue 3 + TypeScript) | v4.x | Interfaz gráfica reactiva (SPA), componentes de usuario y navegación. |
 | **Backend (Servidor)** | **FastAPI** (Python 3.12+) | v0.140+ | API RESTful, lógica de negocio, validaciones Pydantic y autenticación JWT. |
-| **Base de Datos** | **PostgreSQL** | v18+ | Almacenamiento relacional persistente, relaciones estricta e integridad ACID. |
+| **Base de Datos** | **PostgreSQL** | v18+ | Almacenamiento relacional persistente, relaciones estricta e integridad ACID y soporte JSONB. |
 | **Entorno / Despliegue** | **Docker & Docker Compose** | v25+ | Contenedorización, aislación de entornos Dev/Prod y orquestación de servicios. |
 
 ---
@@ -30,11 +30,11 @@ Una decisión tecnológica sólida responde abiertamente a las siguientes pregun
 
 ### 2.3 ¿Por qué este gestor de base de datos (PostgreSQL)? ¿Es SQL o NoSQL?
 * **Justificación:**  
-  Se seleccionó **PostgreSQL (BD Relacional)** porque las entidades del dominio de TI poseen una estructura rígida con relaciones complejas e indispensables entre tablas (un Ticket pertenece a un Activo de Inventario, un Activo se asigna a un Usuario, y un Procedimiento KB resuelve un conjunto de Tickets). Se requiere integridad transaccional (ACID) y claves foráneas estrictas.
+  Se seleccionó **PostgreSQL (BD Relacional)** porque las entidades del dominio de TI poseen una estructura rígida con relaciones complejas e indispensables entre tablas (un Ticket pertenece a un Activo de Inventario, un Activo se asigna a un Usuario, y un Procedimiento KB resuelve un conjunto de Tickets). Se requiere integridad transaccional (ACID) y claves foráneas estrictas. De todas formas se aprovecha la capcidad de PostgreSQL de almacenar datos semiestructurados en formato JSONB donde resultan convenientes los campos no estructurados.
 
 ### 2.4 ¿Por qué esta plataforma de despliegue (Docker)? ¿Qué restricciones técnicas o económicas influyeron?
 * **Justificación:**  
-  La dependencia ya trabaja con software de contenedores y virtualización, por lo que están familiarizados con la tecnología. Docker y Docker Compose permiten abstraer las diferencias entre los sistemas operativos de desarrollo y producción. Con un solo comando (`docker-compose up`) se levantan de forma aislada los contenedores de FastAPI, 4 y PostgreSQL, eliminando el problema clásico de *"en mi máquina funciona"*.
+  La dependencia ya trabaja con software de contenedores y virtualización, por lo que están familiarizados con la tecnología. Docker y Docker Compose permiten abstraer las diferencias entre los sistemas operativos de desarrollo y producción. Con un solo comando (`docker-compose up`) se levantan de forma aislada los contenedores de FastAPI, Nuxt 4 y PostgreSQL, eliminando el problema clásico de *"en mi máquina funciona"*.
 
 ### 2.5 ¿El equipo (o el estudiante) tiene experiencia previa con estas tecnologías?
 * **Justificación:**  
