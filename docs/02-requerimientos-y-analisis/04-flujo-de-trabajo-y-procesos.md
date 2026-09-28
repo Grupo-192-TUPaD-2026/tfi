@@ -35,7 +35,7 @@ graph TD
     A[Se Crea Tarea / Solicitud en el Sistema] --> B[Asignar Prioridad: Crítico / Estratégico / Operativo / Opcional]
     B --> C[Tarea Ingresa a Columna 'Pendiente' en Kanban]
     C --> D[Técnico TI Toma Tarea -> Mueve a 'En Proceso']
-    
+
     D --> E{¿Ingresa una Tarea de Prioridad 'Crítica'?}
     E -- Sí --> F[Arrastrar Tarea Actual a Columna 'Pausado']
     F --> G[Ingresar Nota de Avance Obligatoria]
@@ -49,7 +49,7 @@ graph TD
     subgraph MonitoreoPreventivo [Monitoreo de Red & Administración]
         M1[Backend Realiza Ping a Infraestructura / Agente PC envía Latido] --> M2{¿Dispositivo Offline por X días?}
         M2 -- Sí --> M3[Generar Alerta Automática en Kanban (Prioridad Operativa)]
-        
+
         ADM[Área Administrativa] --> ADM2[Consultar Inventario Dinámico en Tiempo Real]
     end
 ```
